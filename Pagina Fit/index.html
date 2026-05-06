@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação Física a Distância</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container header-content">
+      <div>
+        <p class="eyebrow">Modelo de formulário</p>
+        <h1>Avaliação Física a Distância</h1>
+      </div>
+      <a class="header-action" href="#termo">Termo</a>
+    </div>
+  </header>
+
+  <main class="container page-grid">
+    <aside class="sidebar" aria-label="Navegação das seções">
+      <nav>
+        <a href="#dados-pessoais">Dados pessoais</a>
+        <a href="#objetivo">Objetivo</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#saude">Saúde / PAR-Q</a>
+        <a href="#historico">Histórico clínico</a>
+        <a href="#habitos">Hábitos</a>
+        <a href="#exames">Exames</a>
+        <a href="#fotos">Fotos</a>
+        <a href="#medidas">Medidas</a>
+        <a href="#observacoes">Observações</a>
+        <a href="#termo">Termo</a>
+      </nav>
+    </aside>
+
+    <form class="form-panel" id="avaliacaoForm">
+      <section class="form-section" id="dados-pessoais">
+        <h2>Dados Pessoais</h2>
+        <div class="field-grid">
+          <label>Nome completo<input type="text" name="nome_completo" required></label>
+          <label>Data de nascimento<input type="date" name="data_nascimento"></label>
+          <label>Idade<input type="number" name="idade" min="0"></label>
+          <label>Sexo
+            <select name="sexo">
+              <option value="">Selecione</option>
+              <option>Feminino</option>
+              <option>Masculino</option>
+              <option>Outro</option>
+              <option>Prefiro não informar</option>
+            </select>
+          </label>
+          <label>Altura<input type="text" name="altura" placeholder="Ex: 1,75 m"></label>
+          <label>Peso atual<input type="text" name="peso_atual" placeholder="Ex: 78 kg"></label>
+          <label>Telefone / WhatsApp<input type="tel" name="telefone"></label>
+          <label>E-mail<input type="email" name="email"></label>
+          <label class="span-2">Profissão<input type="text" name="profissao"></label>
+        </div>
+      </section>
+
+      <section class="form-section" id="objetivo">
+        <h2>Objetivo do Treino</h2>
+        <div class="option-grid">
+          <label><input type="checkbox" name="objetivo" value="Emagrecimento"> Emagrecimento</label>
+          <label><input type="checkbox" name="objetivo" value="Hipertrofia"> Hipertrofia</label>
+          <label><input type="checkbox" name="objetivo" value="Definição muscular"> Definição muscular</label>
+          <label><input type="checkbox" name="objetivo" value="Condicionamento físico"> Condicionamento físico</label>
+          <label><input type="checkbox" name="objetivo" value="Reabilitação / retorno ao exercício"> Reabilitação / retorno ao exercício</label>
+          <label><input type="checkbox" name="objetivo" value="Performance esportiva"> Performance esportiva</label>
+        </div>
+        <label class="full-field">Outro objetivo<input type="text" name="objetivo_outro"></label>
+      </section>
+
+      <section class="form-section" id="experiencia">
+        <h2>Experiência com Treinos</h2>
+        <div class="field-grid">
+          <fieldset>
+            <legend>Já treinou anteriormente?</legend>
+            <label><input type="radio" name="ja_treinou" value="Sim"> Sim</label>
+            <label><input type="radio" name="ja_treinou" value="Não"> Não</label>
+          </fieldset>
+          <label>Há quanto tempo treina/treinou?<input type="text" name="tempo_treino"></label>
+          <label>Frequência semanal disponível<input type="text" name="frequencia" placeholder="Ex: 3 vezes por semana"></label>
+          <fieldset>
+            <legend>Local de treino</legend>
+            <label><input type="radio" name="local_treino" value="Academia"> Academia</label>
+            <label><input type="radio" name="local_treino" value="Casa"> Casa</label>
+            <label><input type="radio" name="local_treino" value="Ar livre"> Ar livre</label>
+          </fieldset>
+          <label class="span-2">Possui limitações de equipamentos? Quais?<textarea name="limitacoes_equipamentos"></textarea></label>
+        </div>
+      </section>
+
+      <section class="form-section" id="saude">
+        <h2>Anamnese de Saúde / PAR-Q</h2>
+        <p class="section-help">Responda sim ou não para cada pergunta.</p>
+        <div class="question-list">
+          <div class="question">
+            <p>1. Algum médico já disse que você possui problema cardíaco e recomendou atividade física supervisionada?</p>
+            <label><input type="radio" name="parq_1" value="Sim"> Sim</label>
+            <label><input type="radio" name="parq_1" value="Não"> Não</label>
+          </div>
+          <div class="question">
+            <p>2. Você sente dor no peito durante atividade física?</p>
+            <label><input type="radio" name="parq_2" value="Sim"> Sim</label>
+            <label><input type="radio" name="parq_2" value="Não"> Não</label>
+          </div>
+          <div class="question">
+            <p>3. No último mês, sentiu dor no peito sem estar praticando atividade física?</p>
+            <label><input type="radio" name="parq_3" value="Sim"> Sim</label>
+            <label><input type="radio" name="parq_3" value="Não"> Não</label>
+          </div>
+          <div class="question">
+            <p>4. Você perde o equilíbrio por tontura ou já perdeu a consciência?</p>
+            <label><input type="radio" name="parq_4" value="Sim"> Sim</label>
+            <label><input type="radio" name="parq_4" value="Não"> Não</label>
+          </div>
+          <div class="question">
+            <p>5. Possui algum problema ósseo ou articular que pode piorar com exercício?</p>
+            <label><input type="radio" name="parq_5" value="Sim"> Sim</label>
+            <label><input type="radio" name="parq_5" value="Não"> Não</label>
+          </div>
+          <div class="question">
+            <p>6. Faz uso de medicamentos para pressão arterial ou coração?</p>
+            <label><input type="radio" name="parq_6" value="Sim"> Sim</label>
+            <label><input type="radio" name="parq_6" value="Não"> Não</label>
+          </div>
+          <div class="question">
+            <p>7. Existe qualquer outro motivo pelo qual você não deveria praticar atividade física?</p>
+            <label><input type="radio" name="parq_7" value="Sim"> Sim</label>
+            <label><input type="radio" name="parq_7" value="Não"> Não</label>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section" id="historico">
+        <h2>Histórico Clínico</h2>
+        <div class="field-grid">
+          <label>Doenças diagnosticadas<textarea name="doencas"></textarea></label>
+          <label>Cirurgias prévias<textarea name="cirurgias"></textarea></label>
+          <label>Lesões / dores recorrentes<textarea name="lesoes"></textarea></label>
+          <label>Uso de medicamentos contínuos<textarea name="medicamentos"></textarea></label>
+          <label class="span-2">Alergias / restrições<textarea name="alergias"></textarea></label>
+        </div>
+      </section>
+
+      <section class="form-section" id="habitos">
+        <h2>Hábitos e Rotina</h2>
+        <div class="field-grid">
+          <label>Qualidade do sono<input type="text" name="sono" placeholder="Horas por noite"></label>
+          <label>Nível de estresse
+            <select name="estresse">
+              <option value="">Selecione</option>
+              <option>Baixo</option>
+              <option>Médio</option>
+              <option>Alto</option>
+            </select>
+          </label>
+          <label>Ingestão hídrica diária<input type="text" name="agua" placeholder="Ex: 2 litros"></label>
+          <label>Rotina de trabalho<input type="text" name="rotina_trabalho"></label>
+          <label class="span-2">Nível de atividade diária<textarea name="atividade_diaria"></textarea></label>
+        </div>
+      </section>
+
+      <section class="form-section" id="exames">
+        <h2>Exames Laboratoriais Recentes</h2>
+        <p class="section-help">Anexar exame de sangue recente, preferencialmente dos últimos 6 meses.</p>
+        <label class="file-field">Anexar exame<input type="file" name="exame" accept=".pdf,.jpg,.jpeg,.png"></label>
+        <div class="tag-list" aria-label="Marcadores principais">
+          <span>Hemograma completo</span>
+          <span>Glicemia / Hemoglobina glicada</span>
+          <span>Insulina</span>
+          <span>Perfil lipídico</span>
+          <span>TGO / TGP</span>
+          <span>TSH / T4 Livre</span>
+          <span>Vitamina D</span>
+          <span>Ferritina / Ferro sérico</span>
+          <span>Creatinina / Ureia</span>
+        </div>
+        <label class="full-field">Outros relevantes<textarea name="outros_exames"></textarea></label>
+      </section>
+
+      <section class="form-section" id="fotos">
+        <h2>Avaliação Postural / Fotos Obrigatórias</h2>
+        <p class="section-help">Enviar fotos com roupa adequada, boa iluminação e fundo neutro. Mulheres: short e top ou biquíni. Homens: short sem camisa ou sunga.</p>
+        <div class="field-grid">
+          <label class="file-field">Vista frontal<input type="file" name="foto_frontal" accept="image/*"></label>
+          <label class="file-field">Perfil direito<input type="file" name="foto_perfil_direito" accept="image/*"></label>
+          <label class="file-field">Perfil esquerdo<input type="file" name="foto_perfil_esquerdo" accept="image/*"></label>
+          <label class="file-field">Vista posterior<input type="file" name="foto_posterior" accept="image/*"></label>
+        </div>
+      </section>
+
+      <section class="form-section" id="medidas">
+        <h2>Medidas Corporais</h2>
+        <div class="field-grid compact">
+          <label>Peso<input type="text" name="medida_peso"></label>
+          <label>Altura<input type="text" name="medida_altura"></label>
+          <label>Cintura<input type="text" name="cintura"></label>
+          <label>Abdômen<input type="text" name="abdomen"></label>
+          <label>Quadril<input type="text" name="quadril"></label>
+          <label>Coxa D/E<input type="text" name="coxa"></label>
+          <label>Braço D/E<input type="text" name="braco"></label>
+          <label>Panturrilha D/E<input type="text" name="panturrilha"></label>
+        </div>
+      </section>
+
+      <section class="form-section" id="observacoes">
+        <h2>Observações Adicionais</h2>
+        <div class="field-grid">
+          <label>Preferências de treino<textarea name="preferencias"></textarea></label>
+          <label>Restrições específicas<textarea name="restricoes"></textarea></label>
+          <label class="span-2">Meta de prazo / evento<textarea name="meta"></textarea></label>
+        </div>
+      </section>
+
+      <section class="form-section" id="termo">
+        <h2>Termo de Responsabilidade</h2>
+        <p class="term-text">Declaro que as informações fornecidas são verdadeiras e estou ciente de que a omissão de condições de saúde pode comprometer minha segurança durante a prática de exercícios.</p>
+        <div class="field-grid">
+          <label>Assinatura<input type="text" name="assinatura" required></label>
+          <label>Data<input type="date" name="data_assinatura"></label>
+        </div>
+        <label class="acceptance"><input type="checkbox" name="aceite" required> Li e concordo com o termo de responsabilidade.</label>
+      </section>
+
+      <div class="form-actions">
+        <button type="reset" class="secondary-button">Limpar</button>
+        <button type="submit" class="primary-button">Gerar resumo</button>
+      </div>
+    </form>
+  </main>
+
+  <dialog id="resumoDialog">
+    <div class="dialog-header">
+      <h2>Resumo da Avaliação</h2>
+      <button type="button" id="fecharResumo" aria-label="Fechar">×</button>
+    </div>
+    <pre id="resumoTexto"></pre>
+    <button type="button" class="primary-button" id="imprimirResumo">Imprimir</button>
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
