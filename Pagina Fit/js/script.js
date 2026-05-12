@@ -6,6 +6,8 @@ const imprimirResumo = document.querySelector("#imprimirResumo");
 
 const labels = {
   nome_completo: "Nome completo",
+  cpf: "CPF",
+  rg: "RG",
   data_nascimento: "Data de nascimento",
   idade: "Idade",
   sexo: "Sexo",
@@ -14,6 +16,8 @@ const labels = {
   telefone: "Telefone / WhatsApp",
   email: "E-mail",
   profissao: "Profissão",
+  academia_treino: "Academia onde irá treinar",
+  endereco: "Endereço",
   objetivo: "Objetivos",
   objetivo_outro: "Outro objetivo",
   ja_treinou: "Já treinou anteriormente",
@@ -51,6 +55,7 @@ const labels = {
   quadril: "Quadril",
   coxa: "Coxa D/E",
   braco: "Braço D/E",
+  antebraco: "Antebraço D/E",
   panturrilha: "Panturrilha D/E",
   preferencias: "Preferências de treino",
   restricoes: "Restrições específicas",

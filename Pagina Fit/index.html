@@ -9,16 +9,51 @@
 <body>
   <header class="topbar">
     <div class="container header-content">
-      <div>
-        <p class="eyebrow">Modelo de formulário</p>
+      <div class="hero-copy">
+        <p class="eyebrow">Personal Jordânia C.F. Santos</p>
         <h1>Avaliação Física a Distância</h1>
+        <p class="hero-subtitle">Força, disciplina e resultados para treinos personalizados.</p>
+        <div class="brand-tags" aria-label="Pilares da marca">
+          <span>Treino</span>
+          <span>Saúde</span>
+          <span>Bem-estar</span>
+        </div>
       </div>
-      <a class="header-action" href="#termo">Termo</a>
     </div>
   </header>
 
   <main class="container page-grid">
     <aside class="sidebar" aria-label="Navegação das seções">
+      <div class="profile-panel">
+        <div class="profile-backdrop" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="profile-card">
+          <p class="profile-url">personaljordania.com/avaliacao</p>
+          <div class="profile-avatar" aria-hidden="true">J</div>
+          <h2>Personal Jordânia</h2>
+          <p>C.F. Santos · CREF MG 048396</p>
+          <div class="profile-highlights">
+            <span>Força</span>
+            <span>Disciplina</span>
+            <span>Resultados</span>
+          </div>
+          <div class="profile-contact">
+            <a href="tel:+5531987454512">(31) 98745-4512</a>
+            <a href="mailto:jordania.claudia@yahoo.com.br">jordania.claudia@yahoo.com.br</a>
+          </div>
+          <div class="profile-docs" aria-label="Resumo da avaliação">
+            <div>
+              <strong>Avaliação física</strong>
+              <small>Anamnese, medidas e histórico clínico</small>
+            </div>
+            <a href="#dados-pessoais">Preencher</a>
+          </div>
+        </div>
+      </div>
       <nav>
         <a href="#dados-pessoais">Dados pessoais</a>
         <a href="#objetivo">Objetivo</a>
@@ -39,6 +74,8 @@
         <h2>Dados Pessoais</h2>
         <div class="field-grid">
           <label>Nome completo<input type="text" name="nome_completo" required></label>
+          <label>CPF<input type="text" name="cpf" inputmode="numeric" placeholder="000.000.000-00"></label>
+          <label>RG<input type="text" name="rg"></label>
           <label>Data de nascimento<input type="date" name="data_nascimento"></label>
           <label>Idade<input type="number" name="idade" min="0"></label>
           <label>Sexo
@@ -54,7 +91,9 @@
           <label>Peso atual<input type="text" name="peso_atual" placeholder="Ex: 78 kg"></label>
           <label>Telefone / WhatsApp<input type="tel" name="telefone"></label>
           <label>E-mail<input type="email" name="email"></label>
-          <label class="span-2">Profissão<input type="text" name="profissao"></label>
+          <label>Profissão<input type="text" name="profissao"></label>
+          <label>Academia onde irá treinar<input type="text" name="academia_treino" placeholder="Ex: Caverna Academia"></label>
+          <label class="span-2">Endereço<input type="text" name="endereco"></label>
         </div>
       </section>
 
@@ -201,6 +240,7 @@
           <label>Quadril<input type="text" name="quadril"></label>
           <label>Coxa D/E<input type="text" name="coxa"></label>
           <label>Braço D/E<input type="text" name="braco"></label>
+          <label>Antebraço D/E<input type="text" name="antebraco"></label>
           <label>Panturrilha D/E<input type="text" name="panturrilha"></label>
         </div>
       </section>
